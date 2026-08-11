@@ -24,8 +24,8 @@ def load_model():
 
 @st.cache_data
 def load_predictions():
-    df1 = pd.read_csv("part1.zip")
-    df2 = pd.read_csv("part2.zip")
+    df1 = pd.read_csv("predictions_part1.zip")
+    df2 = pd.read_csv("predictions_part2.zip")
     return pd.concat([df1, df2], ignore_index=True)
 
 try:
